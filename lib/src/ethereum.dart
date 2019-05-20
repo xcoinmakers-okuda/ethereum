@@ -124,7 +124,7 @@ class Ethereum {
       throw ArgumentError.value(
           puri.host, 'Ethereum::_validateUri - invalid host');
     }
-//    Uri newUri = puri;
+    Uri newUri = puri;
 //    if (!puri.hasPort) {
 //      if (puri.scheme == rpcHttpScheme) {
 //        newUri = puri.replace(port: defaultHttpPort);
@@ -133,7 +133,7 @@ class Ethereum {
 //      }
 //    }
 //    port = newUri.port;
-//    _uri = newUri;
+    _uri = newUri;
     rpcClient.uri = _uri;
   }
 
